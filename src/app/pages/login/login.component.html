@@ -1,6 +1,10 @@
 <app-default-login-layout title="Faça login na sua conta"
 primaryBtnText="Entrar"
-secondaryBtnText="Registrar-se">
+secondaryBtnText="Registrar-se"
+(submit)="submit()"
+(navigate)="navigate()"
+>
+
   <form [formGroup]="loginForm">
       <app-primary-input
       formControlName="email"
@@ -17,8 +21,9 @@ secondaryBtnText="Registrar-se">
       type="password"
       label="Senha"
       >
-        <img src="/email.svg"/>
+        <img src="/password.svg"/>
       </app-primary-input>
       <span>Esqueceu a senha ?</span>
   </form>
+
 </app-default-login-layout>
