@@ -5,25 +5,19 @@
   "services": "O Angular Login é um projeto focado em desenvolver uma interface de login e registro moderna, responsiva e organizada, utilizando Angular, SCSS e TypeScript. O objetivo principal é aprimorar minhas habilidades no front-end e fortalecer meu domínio do Angular para integrá-lo de forma sólida à minha stack de tecnologias",
   "type": "Front end",
   "imgs": {
-    "banner": "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/banner/banner.PNG",
+    "banner": "https://raw.githubusercontent.com/luizjoliver/Angular-login-app/main/public/Portfolio/banner/banner.PNG",
 
     "desktopVersion": [
 
-      "https://raw.githubusercontent.com/luizjoliver/Angular-login-app/main/public/portfolio/desktopVersion/desktop1.PNG",
-      "https://raw.githubusercontent.com/luizjoliver/Angular-login-app/main/public/portfolio/desktopVersion/desktop2.PNG",
-      "https://raw.githubusercontent.com/luizjoliver/Angular-login-app/main/public/portfolio/desktopVersion/desktop3.PNG",
-      "https://raw.githubusercontent.com/luizjoliver/Angular-login-app/main/public/portfolio/desktopVersion/desktop4.PNG",
-      "https://raw.githubusercontent.com/luizjoliver/Angular-login-app/main/public/portfolio/desktopVersion/desktop5.PNG",
-      "https://raw.githubusercontent.com/luizjoliver/Angular-login-app/main/public/portfolio/desktopVersion/desktop6.PNG"
+      "https://raw.githubusercontent.com/luizjoliver/Angular-login-app/main/public/Portfolio/desktopVersion/desltop1.PNG",
+      "https://raw.githubusercontent.com/luizjoliver/Angular-login-app/main/public/Portfolio/desktopVersion/desltop2.PNG",
+      "https://raw.githubusercontent.com/luizjoliver/Angular-login-app/main/public/Portfolio/desktopVersion/desltop3.PNG"
     ],
     "mobileVersion": [
-      "https://raw.githubusercontent.com/luizjoliver/Angular-login-app/main/public/portfolio/mobileVersion/mobile.PNG",
-      "https://raw.githubusercontent.com/luizjoliver/Angular-login-app/main/public/portfolio/mobileVersion/mobile1.PNG",
-      "https://raw.githubusercontent.com/luizjoliver/Angular-login-app/main/public/portfolio/mobileVersion/mobile2.PNG",
-      "https://raw.githubusercontent.com/luizjoliver/Angular-login-app/main/public/portfolio/mobileVersion/mobile3.PNG",
-      "https://raw.githubusercontent.com/luizjoliver/Angular-login-app/main/public/portfolio/mobileVersion/mobile4.PNG",
-      "https://raw.githubusercontent.com/luizjoliver/Angular-login-app/main/public/portfolio/mobileVersion/mobile5.PNG",
-      "https://raw.githubusercontent.com/luizjoliver/Angular-login-app/main/public/portfolio/mobileVersion/mobile6.PNG"
+      "https://raw.githubusercontent.com/luizjoliver/Angular-login-app/main/public/Portfolio/mobileVersion/mobile.PNG",
+      "https://raw.githubusercontent.com/luizjoliver/Angular-login-app/main/public/Portfolio/mobileVersion/mobile2.PNG",
+      "https://raw.githubusercontent.com/luizjoliver/Angular-login-app/main/public/Portfolio/mobileVersion/mobile3.PNG"
+
     ]
   }
 }
