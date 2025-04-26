@@ -4,24 +4,31 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { PrimaryInputComponent } from "../../components/primary-input/primary-input.component";
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-type LoginForm = {
+
+type RegisterForm = {
+  name:FormControl;
   email:FormControl;
   password:FormControl;
+  passwordConfirm:FormControl
 }
+
 @Component({
-  selector: 'app-login',
+  selector: 'app-register',
   imports: [DefaultLoginLayoutComponent,
     ReactiveFormsModule, PrimaryInputComponent],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+  templateUrl: './register.component.html',
+  styleUrl: './register.component.scss'
 })
-export class LoginComponent {
-  loginForm!:FormGroup<LoginForm>
+export class RegisterComponent {
+
+  registerForm!:FormGroup<RegisterForm>
 
   constructor(private router:Router, private toastr: ToastrService,){
-    this.loginForm = new FormGroup({
+    this.registerForm = new FormGroup({
+      name:new FormControl('',[Validators.required,Validators.minLength(6)]),
       email:new FormControl('',[Validators.required,Validators.email]),
-      password:new FormControl('',[Validators.required,Validators.minLength(6)])
+      password:new FormControl('',[Validators.required,Validators.minLength(6)]),
+      passwordConfirm:new FormControl('',[Validators.required,Validators.minLength(6)])
     })
   }
 
@@ -29,10 +36,11 @@ export class LoginComponent {
 
   submit(){
     this.toastr.success(
-      `Email: ${this.loginForm.value.email}<br>
-       Senha: ${this.loginForm.value.password}<br>
+      `Email: ${this.registerForm.value.email}<br>
+       Senha: ${this.registerForm.value.password}<br>
+       Confirmação Senha: ${this.registerForm.value.passwordConfirm}<br>
        Pronto para enviar ao backend!`,
-      'Dados do Login',
+      'Dados de registro',
       {
         enableHtml: true,
         timeOut: 5000
@@ -40,6 +48,6 @@ export class LoginComponent {
     )
   }
   navigate(){
-    this.router.navigate(['register'])
+    this.router.navigate(['login'])
   }
 }
