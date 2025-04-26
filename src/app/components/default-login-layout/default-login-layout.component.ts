@@ -10,6 +10,7 @@ export class DefaultLoginLayoutComponent {
   @Input({ required: true }) title: string = '';
   @Input({ required: true }) primaryBtnText: string = '';
   @Input({ required: true }) secondaryBtnText: string = '';
+  @Input() disablePrimaryBtn: boolean = true
   @Output('submit') onSubmit = new EventEmitter()
   @Output('navigate') onNavigate = new EventEmitter()
 

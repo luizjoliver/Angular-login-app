@@ -12,4 +12,9 @@ span{
   text-decoration: underline;
   color: v.$secondary-color;
   text-align: end;
+  cursor: pointer;
+
+  &:hover{
+    color: v.$primary-color;
+  }
 }
